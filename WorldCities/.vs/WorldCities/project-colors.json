@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "45e47192-5bf4-4caa-9d5b-b3db9cf9b2fa": {
+      "ProjectGuid": "45e47192-5bf4-4caa-9d5b-b3db9cf9b2fa",
+      "DisplayName": "WorldCities",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
