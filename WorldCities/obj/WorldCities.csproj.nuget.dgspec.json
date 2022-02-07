@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj": {}
+    "C:\\Users\\VGIvanov\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj": {
+    "C:\\Users\\VGIvanov\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj",
+        "projectUniqueName": "C:\\Users\\VGIvanov\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj",
         "projectName": "WorldCities",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\FullStack\\WorldCities\\obj\\",
+        "projectPath": "C:\\Users\\VGIvanov\\source\\repos\\FullStack\\WorldCities\\WorldCities.csproj",
+        "packagesPath": "C:\\Users\\VGIvanov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VGIvanov\\source\\repos\\FullStack\\WorldCities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VGIvanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,13 +53,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.13, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -73,6 +76,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.13, 5.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

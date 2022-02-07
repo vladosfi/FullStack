@@ -17,13 +17,13 @@ namespace WorldCities.Controllers
     {
         private readonly ApplicationDbContext context;
         private readonly IWebHostEnvironment env;
-        public SeedController(
-        ApplicationDbContext context,
-        IWebHostEnvironment env)
+
+        public SeedController(ApplicationDbContext context, IWebHostEnvironment env)
         {
             this.context = context;
             this.env = env;
         }
+
         [HttpGet]
         public async Task<ActionResult> Import()
         {
@@ -31,6 +31,8 @@ namespace WorldCities.Controllers
 
             using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
                 using (var ep = new ExcelPackage(stream))
                 {
                     // get the first worksheet
@@ -44,7 +46,8 @@ namespace WorldCities.Controllers
                     var lstCountries = context.Countries.ToList();
 
                     // iterates through all rows, skipping the first one
-                    for (int nRow = 2; nRow <= ws.Dimension.End.Row; nRow++)
+                    //for (int nRow = 2; nRow <= ws.Dimension.End.Row; nRow++)
+                    for (int nRow = 2; nRow <= 1000; nRow++)
                     {
                         var row = ws.Cells[nRow, 1, nRow, ws.Dimension.End.Column];
                         var name = row[nRow, 5].GetValue<string>();
@@ -70,7 +73,8 @@ namespace WorldCities.Controllers
                     #region Import all Cities
                     // iterates through all rows, skipping the first one
                     for (int nRow = 2;
-                    nRow <= ws.Dimension.End.Row; nRow++)
+                    //nRow <= ws.Dimension.End.Row; nRow++)
+                    nRow <= 1000; nRow++)
                     {
                         var row = ws.Cells[nRow, 1, nRow, ws.Dimension.End.Column];
                         // create the City entity and fill it with xlsx data

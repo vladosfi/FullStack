@@ -28,7 +28,9 @@ namespace WorldCities
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options => {
+                options.JsonSerializerOptions.WriteIndented = true;
+            });
 
             // Add ApplicationDbContext.
             services.AddDbContext<ApplicationDbContext>(options => 
@@ -43,9 +45,14 @@ namespace WorldCities
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            //app.UseCors(x => x.WithOrigins("http://localhost:4200" ,"https://localhost:4200").AllowAnyMethod().AllowAnyHeader());
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("CorsApi");
 
             app.UseAuthorization();
 
