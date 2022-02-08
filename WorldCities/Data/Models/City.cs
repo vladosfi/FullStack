@@ -35,12 +35,12 @@ namespace WorldCities.Data.Models
         [Column(TypeName = "decimal(7,4)")]
         public decimal Lon { get; set; }
         #endregion
-        
+
         /// <summary>
         /// Country Id (foreign key)
         /// </summary>
         public int CountryId { get; set; }
-        
+
         /// <summary>
         /// The country related to this city.
         /// </summary>
