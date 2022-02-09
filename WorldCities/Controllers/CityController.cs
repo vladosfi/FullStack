@@ -21,9 +21,13 @@ namespace WorldCities.Controllers
         // GET: api/Cities
         // GET: api/Cities/?pageIndex=0&pageSize=10
         [HttpGet]
-        public async Task<ActionResult<ApiResult<City>>> GetCities(int pageIndex = 0, int pageSize = 10)
+        public async Task<ActionResult<ApiResult<City>>> GetCities(
+               int pageIndex = 0,
+               int pageSize = 10,
+               string sortColumn = null,
+               string sortOrder = null)
         {
-            return await ApiResult<City>.CreateAsync(context.Cities, pageIndex, pageSize);
+            return await ApiResult<City>.CreateAsync(context.Cities, pageIndex, pageSize, sortColumn, sortOrder);
         }
 
         // GET: api/Cities/5
