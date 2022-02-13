@@ -5,6 +5,8 @@ import { environment } from 'src/environments/environment';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { Subject } from 'rxjs';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
 @Component({
   selector: 'app-cities',
@@ -27,12 +29,26 @@ export class CitiesComponent {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
+  filterTextChanged: Subject<string> = new Subject<string>();
 
   constructor(private http: HttpClient) { }
   baseUrl = environment.apiUrl;
 
   ngOnInit() {
     this.loadData(null);
+  }
+
+
+  // debounce filter text changes
+  onFilterTextChanged(filterText: string) {
+    if (this.filterTextChanged.observers.length === 0) {
+      this.filterTextChanged
+        .pipe(debounceTime(1000), distinctUntilChanged())
+        .subscribe(query => {
+          this.loadData(query);
+        });
+    }
+    this.filterTextChanged.next(filterText);
   }
 
   loadData(query: string = null) {
@@ -48,7 +64,7 @@ export class CitiesComponent {
   }
 
   getData(event: PageEvent) {
-    var url = this.baseUrl + 'Cities';
+    var url = this.baseUrl + 'api/Cities';
     var params = new HttpParams()
       .set("pageIndex", event.pageIndex.toString())
       .set("pageSize", event.pageSize.toString())

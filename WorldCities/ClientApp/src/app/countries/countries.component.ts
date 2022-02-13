@@ -5,11 +5,14 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { Country } from './country';
 import { environment } from '../../environments/environment';
+import { Subject } from 'rxjs';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 @Component({
   selector: 'app-countries',
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.css']
 })
+
 export class CountriesComponent implements OnInit {
   public displayedColumns: string[] = ['id', 'name', 'iso2', 'iso3'];
   public countries: MatTableDataSource<Country>;
@@ -21,6 +24,7 @@ export class CountriesComponent implements OnInit {
   filterQuery: string = null;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
+  filterTextChanged: Subject<string> = new Subject<string>();
 
   baseUrl = environment.apiUrl;
 
@@ -30,6 +34,18 @@ export class CountriesComponent implements OnInit {
 
   ngOnInit() {
     this.loadData(null);
+  }
+
+  // debounce filter text changes
+  onFilterTextChanged(filterText: string) {
+    if (this.filterTextChanged.observers.length === 0) {
+      this.filterTextChanged
+        .pipe(debounceTime(1000), distinctUntilChanged())
+        .subscribe(query => {
+          this.loadData(query);
+        });
+    }
+    this.filterTextChanged.next(filterText);
   }
 
   loadData(query: string = null) {
@@ -43,7 +59,7 @@ export class CountriesComponent implements OnInit {
   }
 
   getData(event: PageEvent) {
-    var url = this.baseUrl + 'Countries';
+    var url = this.baseUrl + 'api/Countries';
     var params = new HttpParams()
       .set("pageIndex", event.pageIndex.toString())
       .set("pageSize", event.pageSize.toString())
