@@ -60,6 +60,7 @@ export class CityService
     filterColumn: string,
     filterQuery: string
   ): Observable<ApiResult> {
+
     var url = this.baseUrl + 'api/Countries';
     var params = new HttpParams()
       .set("pageIndex", pageIndex.toString())
@@ -73,6 +74,7 @@ export class CityService
     }
     return this.http.get<ApiResult>(url, { params });
   }
+
   isDupeCity(item): Observable<boolean> {
     var url = this.baseUrl + "api/Cities/IsDupeCity";
     return this.http.post<boolean>(url, item);
