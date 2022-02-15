@@ -28,7 +28,7 @@ import { CountryEditComponent } from './countries/country-edit.component';
     CountryEditComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
