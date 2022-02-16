@@ -75,6 +75,7 @@ export class CitiesComponent {
     var filterQuery = (this.filterQuery)
       ? this.filterQuery
       : null;
+
     this.cityService.getData<ApiResult<City>>(
       event.pageIndex,
       event.pageSize,
