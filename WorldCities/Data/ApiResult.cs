@@ -86,7 +86,12 @@ namespace WorldCities.Data
                 .Take(pageSize);
 
             // retrieve the SQL query (for debug purposes)
-            var sql = source.ToParametrizedSql();
+#if DEBUG
+            {
+                var sql = source.ToParametrizedSql();
+                // do something with the sql string
+            }
+#endif
 
             var data = await source.ToListAsync();
 
