@@ -69,11 +69,10 @@
     <div class="form-group">
       <label for="countryId">Country:</label>
       <br />
-      <mat-form-field *ngIf="countries">
+      <mat-form-field *ngIf="countries | async as result">
         <mat-label>Select a Country...</mat-label>
         <mat-select id="countryId" formControlName="countryId">
-          <mat-option *ngFor="let country of countries"
-                      [value]="country.id">
+          <mat-option *ngFor="let country of result.data" [value]="country.id">
             {{country.name}}
           </mat-option>
         </mat-select>
@@ -105,6 +104,37 @@
               class="btn">
         Cancel
       </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Form debug info panel -->
+<div class="card bg-light mb-3">
+  <div class="card-header">Form Debug Info</div>
+  <div class="card-body">
+    <div class="card-text">
+      <div><strong>Form value:</strong></div>
+      <div class="help-block">
+        {{ form.value | json }}
+      </div>
+      <div class="mt-2"><strong>Form status:</strong></div>
+      <div class="help-block">
+        {{ form.status | json }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Form activity log panel -->
+<div class="card bg-light mb-3">
+  <div class="card-header">Form Activity Log</div>
+  <div class="card-body">
+    <div class="card-text">
+      <div class="help-block">
+        <span *ngIf="activityLog"
+              [innerHTML]="activityLog"></span>
+      </div>
     </div>
   </div>
 </div>
