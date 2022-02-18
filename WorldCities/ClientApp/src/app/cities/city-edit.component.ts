@@ -40,7 +40,7 @@ export class CityEditComponent
   countries: Observable<ApiResult<Country>>;
 
   // Activity Log (for debugging purposes)
-  activityLog: string = '';
+  //activityLog: string = '';
 
   // Notifier subject (to avoid memory leaks)
   private destroySubject: Subject<boolean> = new Subject<boolean>();
@@ -101,9 +101,8 @@ export class CityEditComponent
   }
 
   log(str: string) {
-    this.activityLog += "["
-      + new Date().toLocaleString()
-      + "] " + str + "<br />";
+    //this.activityLog += "["+ new Date().toLocaleString() + "] " + str + "<br />";
+    console.log("[" + new Date().toLocaleString() + "] " + str);
   }
 
   loadData() {
