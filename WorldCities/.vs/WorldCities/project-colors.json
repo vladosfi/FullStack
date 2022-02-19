@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a317d0b4-c331-4906-a881-cb400c875ae4": {
+      "ProjectGuid": "a317d0b4-c331-4906-a881-cb400c875ae4",
+      "DisplayName": "WorldCities.Tests",
+      "ColorIndex": 0
+    },
+    "e609740b-b088-493a-b102-da317ec5bee0": {
+      "ProjectGuid": "e609740b-b088-493a-b102-da317ec5bee0",
+      "DisplayName": "WorldCities",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
