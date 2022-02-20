@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "HealthCheck": {
+    "WorldCities": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:44334;http://localhost:44333",

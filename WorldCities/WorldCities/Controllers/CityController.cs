@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
@@ -65,6 +66,7 @@ namespace WorldCities.Controllers
         // specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutCity(int id, City city)
         {
             if (id != city.Id)
@@ -96,6 +98,7 @@ namespace WorldCities.Controllers
         // To protect from overposting attacks, please enable the
         // specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<City>> PostCity(City city)
         {
@@ -119,6 +122,7 @@ namespace WorldCities.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [Route("IsDupeCity")]
         public bool IsDupeCity(City city)
         {

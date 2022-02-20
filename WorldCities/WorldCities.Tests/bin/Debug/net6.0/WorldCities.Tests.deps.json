@@ -170,7 +170,7 @@
           "IdentityServer4.Storage": "4.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.13",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.13",
-          "Microsoft.AspNetCore.Identity.UI": "5.0.13",
+          "Microsoft.AspNetCore.Identity.UI": "5.0.14",
           "Microsoft.Extensions.Http": "5.0.0"
         },
         "runtime": {
@@ -202,10 +202,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/5.0.13": {},
-      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.13": {
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.14": {},
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.14": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.13"
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.14"
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -216,7 +216,7 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.13": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "5.0.13",
-          "Microsoft.Extensions.Identity.Stores": "5.0.13"
+          "Microsoft.Extensions.Identity.Stores": "5.0.14"
         },
         "runtime": {
           "lib/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
@@ -225,19 +225,19 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/5.0.13": {
+      "Microsoft.AspNetCore.Identity.UI/5.0.14": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "5.0.13",
-          "Microsoft.Extensions.Identity.Stores": "5.0.13"
+          "Microsoft.Extensions.FileProviders.Embedded": "5.0.14",
+          "Microsoft.Extensions.Identity.Stores": "5.0.14"
         },
         "runtime": {
           "lib/net5.0/Microsoft.AspNetCore.Identity.UI.Views.V4.dll": {
-            "assemblyVersion": "5.0.13.0",
-            "fileVersion": "5.0.1321.57202"
+            "assemblyVersion": "5.0.14.0",
+            "fileVersion": "5.0.1422.6324"
           },
           "lib/net5.0/Microsoft.AspNetCore.Identity.UI.dll": {
-            "assemblyVersion": "5.0.13.0",
-            "fileVersion": "5.0.1321.57202"
+            "assemblyVersion": "5.0.14.0",
+            "fileVersion": "5.0.1422.6324"
           }
         }
       },
@@ -742,7 +742,7 @@
           "Microsoft.Extensions.Primitives": "5.0.0"
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/5.0.13": {
+      "Microsoft.Extensions.FileProviders.Embedded/5.0.14": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "5.0.0"
         }
@@ -771,17 +771,17 @@
           "Microsoft.Extensions.Options": "5.0.0"
         }
       },
-      "Microsoft.Extensions.Identity.Core/5.0.13": {
+      "Microsoft.Extensions.Identity.Core/5.0.14": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.13",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.14",
           "Microsoft.Extensions.Logging": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0"
         }
       },
-      "Microsoft.Extensions.Identity.Stores/5.0.13": {
+      "Microsoft.Extensions.Identity.Stores/5.0.14": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Identity.Core": "5.0.13",
+          "Microsoft.Extensions.Identity.Core": "5.0.14",
           "Microsoft.Extensions.Logging": "5.0.0"
         }
       },
@@ -1435,6 +1435,18 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
+      "SendGrid/9.25.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2",
+          "starkbank-ecdsa": "1.3.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SendGrid.dll": {
+            "assemblyVersion": "9.25.3.0",
+            "fileVersion": "9.25.3.0"
+          }
+        }
+      },
       "Serilog/2.10.0": {
         "runtime": {
           "lib/netstandard2.1/Serilog.dll": {
@@ -1573,6 +1585,14 @@
           "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.3.0.0"
+          }
+        }
+      },
+      "starkbank-ecdsa/1.3.3": {
+        "runtime": {
+          "lib/netstandard2.1/StarkbankEcdsa.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -2727,10 +2747,12 @@
           "EPPlus": "5.8.6",
           "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": "5.0.13",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.13",
+          "Microsoft.AspNetCore.Identity.UI": "5.0.14",
           "Microsoft.AspNetCore.SpaServices.Extensions": "5.0.12",
           "Microsoft.EntityFrameworkCore": "5.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "SendGrid": "9.25.3",
           "Serilog.AspNetCore": "5.0.0",
           "Serilog.Settings.Configuration": "3.3.0",
           "Serilog.Sinks.MSSqlServer": "5.7.0",
@@ -2846,19 +2868,19 @@
       "path": "microsoft.aspnetcore.authentication.openidconnect/3.1.0",
       "hashPath": "microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/5.0.13": {
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JzI40kojLP4cPUu6NqPrliNPDRH87xH6SXBe2BMDv1d3ERtG+5TnXUbqD+0NwwnEjoo8o9clWOu0gHeoOb/5BA==",
-      "path": "microsoft.aspnetcore.cryptography.internal/5.0.13",
-      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.13.nupkg.sha512"
+      "sha512": "sha512-XHHWcCuxqZ5y3x2GUnBtZ9UuoTKiVDPoqb5jWOmKF1vhf0By6bhLX+y87quI9VFw3hXIVwkhxwz/vi0mVqvh8A==",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.14",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.14.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.13": {
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RSwb41IMF3eYsGlnQ9wTrBay06DE5AhXLsh/IoF/5/MZQ4b26ZIPqV1nxLw0n/rKzbhc4SmPBGf4zsss8YoItA==",
-      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.13",
-      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.13.nupkg.sha512"
+      "sha512": "sha512-xKJR6NaioIuCBAJGiDWsE2Tl4xtkVh2N2oFpNIJKYIekbfL4okjIxYHv6WcxUvMlZ+YzOH/TixpCtPIiDgBRxw==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.14",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.14.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
@@ -2874,12 +2896,12 @@
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/5.0.13",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.5.0.13.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Identity.UI/5.0.13": {
+    "Microsoft.AspNetCore.Identity.UI/5.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SaSND228uUTQR427V0x0KIBCrxuFvmnmBGufuRcVmBhZFbXhmxbjRqIfuhGoDcEXOagRpGCOGK/ZkfqnyibUNA==",
-      "path": "microsoft.aspnetcore.identity.ui/5.0.13",
-      "hashPath": "microsoft.aspnetcore.identity.ui.5.0.13.nupkg.sha512"
+      "sha512": "sha512-f4MrIQn2c9tYj1LBYUyB8lWSUTuDcjO3FMhwDN7NgeMoRi1+ieQE5UrFfKULEMqGKyDiSGGHDV8RGaC7MvFBTA==",
+      "path": "microsoft.aspnetcore.identity.ui/5.0.14",
+      "hashPath": "microsoft.aspnetcore.identity.ui.5.0.14.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor/2.2.0": {
       "type": "package",
@@ -3112,12 +3134,12 @@
       "path": "microsoft.extensions.fileproviders.abstractions/5.0.0",
       "hashPath": "microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.FileProviders.Embedded/5.0.13": {
+    "Microsoft.Extensions.FileProviders.Embedded/5.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CwO0Ao69p45Hd0mdS4jYoZbb/e+9ruS5yBB9/4urkWLorutG14asiC0x2wtta4p+LGHweqdg42SoJnynwcSQQg==",
-      "path": "microsoft.extensions.fileproviders.embedded/5.0.13",
-      "hashPath": "microsoft.extensions.fileproviders.embedded.5.0.13.nupkg.sha512"
+      "sha512": "sha512-FmpHGC2OuFohnN8DfhBfOKr1fk+FsZ0YQJkuLlnbN9OmgtBZ/CP18/KG1n4CEZEzFvCs6GXX/ywsxouXcGigzg==",
+      "path": "microsoft.extensions.fileproviders.embedded/5.0.14",
+      "hashPath": "microsoft.extensions.fileproviders.embedded.5.0.14.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Physical/5.0.0": {
       "type": "package",
@@ -3147,19 +3169,19 @@
       "path": "microsoft.extensions.http/5.0.0",
       "hashPath": "microsoft.extensions.http.5.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Identity.Core/5.0.13": {
+    "Microsoft.Extensions.Identity.Core/5.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Y0mCMZn36Jfg2pn1l2tJAofRLEqTRUyNRErlP2Artp6kZMojuiqQlb6JAjWwWTvpsj902U8MQP72P9u1sBofpg==",
-      "path": "microsoft.extensions.identity.core/5.0.13",
-      "hashPath": "microsoft.extensions.identity.core.5.0.13.nupkg.sha512"
+      "sha512": "sha512-XC3m9oy5fKLwJ1wVijpWcgzSc2JB9cfkT0XaamGksMCqFl1QxlY9o20nUaExbYoaWp/3ERIwjAiWDk3b0UKk7A==",
+      "path": "microsoft.extensions.identity.core/5.0.14",
+      "hashPath": "microsoft.extensions.identity.core.5.0.14.nupkg.sha512"
     },
-    "Microsoft.Extensions.Identity.Stores/5.0.13": {
+    "Microsoft.Extensions.Identity.Stores/5.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p1Im/N5C+4OJMv01s8rxp4EfBfUPkC+lrvAFAMoYGHWiGDJ4/3U8tWyiAbc6IxycbgYi/UXxWTGbCiXOk8bSLg==",
-      "path": "microsoft.extensions.identity.stores/5.0.13",
-      "hashPath": "microsoft.extensions.identity.stores.5.0.13.nupkg.sha512"
+      "sha512": "sha512-/RqIba1Iiet7DhuxLat3RP2AjeXI5fUC5B3b7dzgk7ybYya18zDUwcPZwKd5RQDGdEBXNu09uryZiOphcZ+vlA==",
+      "path": "microsoft.extensions.identity.stores/5.0.14",
+      "hashPath": "microsoft.extensions.identity.stores.5.0.14.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/5.0.0": {
       "type": "package",
@@ -3504,6 +3526,13 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
+    "SendGrid/9.25.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dldhsc4+jV28rfa53W+09A549lDfKqGEFFtdOU4uOxHvS/pFhBN8lRkAEzvbMbycwZJJCzfrDdKc/qT1MxWynQ==",
+      "path": "sendgrid/9.25.3",
+      "hashPath": "sendgrid.9.25.3.nupkg.sha512"
+    },
     "Serilog/2.10.0": {
       "type": "package",
       "serviceable": true,
@@ -3580,6 +3609,13 @@
       "sha512": "sha512-UYKSjTMTlUY9T3OgzMmLDLD+z0qPfgvq/RvG0rKfyz+O+Zrjw3X/Xpv14J4WMcGVsOjUaR+k8n2MdmqVpJtI6A==",
       "path": "serilog.sinks.periodicbatching/2.3.0",
       "hashPath": "serilog.sinks.periodicbatching.2.3.0.nupkg.sha512"
+    },
+    "starkbank-ecdsa/1.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OblOaKb1enXn+dSp7tsx9yjwV+/BEKM9jFhshIkZTwCk7LuTFTp+wSon6rFzuPiIiTGtvVWQNUw2slHjGktJog==",
+      "path": "starkbank-ecdsa/1.3.3",
+      "hashPath": "starkbank-ecdsa.1.3.3.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

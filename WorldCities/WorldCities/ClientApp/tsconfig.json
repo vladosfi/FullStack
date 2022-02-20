@@ -19,5 +19,10 @@
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
-  }
+  },
+  "exclude": [
+    "typings/browser.d.ts",
+    "typings/browser",
+    "node_modules"
+  ]
 }

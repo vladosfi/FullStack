@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WorldCities.Data;
@@ -65,6 +66,7 @@ namespace WorldCities.Controllers
         // PUT: api/Countries/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutCountry(int id, Country country)
         {
             if (id != country.Id)
@@ -96,6 +98,7 @@ namespace WorldCities.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Country>> PostCountry(Country country)
         {
             context.Countries.Add(country);
@@ -106,6 +109,7 @@ namespace WorldCities.Controllers
 
         // DELETE: api/Countries/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteCountry(int id)
         {
             var country = await context.Countries.FindAsync(id);

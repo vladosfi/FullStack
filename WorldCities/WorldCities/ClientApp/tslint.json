@@ -1,8 +1,5 @@
 {
   "extends": "tslint:recommended",
-  "rulesDirectory": [
-    "codelyzer"
-  ],
   "rules": {
     "align": {
       "options": [
@@ -148,5 +145,8 @@
       "app",
       "kebab-case"
     ]
-  }
+  },
+  "rulesDirectory": [
+    "codelyzer"
+  ]
 }
