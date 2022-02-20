@@ -42,7 +42,7 @@ namespace WorldCities.Tests
 
             #region Act
             // todo: invoke the test
-            using (var context = new ApplicationDbContext(options))
+            using (var context = new ApplicationDbContext(options, storeOptions))
             {
                 var controller = new CitiesController(context);
                 city_existing = (await controller.GetCity(1)).Value;
