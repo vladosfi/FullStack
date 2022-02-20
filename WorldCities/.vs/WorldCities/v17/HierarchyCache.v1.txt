@@ -1,0 +1,295 @@
+﻿++Solution 'WorldCities' ‎(2 of 2 projects)
+i:{00000000-0000-0000-0000-000000000000}:WorldCities.sln
+++WorldCities.Tests
+i:{00000000-0000-0000-0000-000000000000}:WorldCities.Tests
+++Dependencies
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>8563
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119683
+++CitiesController_Test.cs
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\source\repos\fullstack\worldcities\worldcities.tests\citiescontroller_test.cs
+++Analyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:analyzers
+i:{e609740b-b088-493a-b102-da317ec5bee0}:analyzers
+++Frameworks
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:frameworks
+i:{e609740b-b088-493a-b102-da317ec5bee0}:frameworks
+++Packages
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:packages
+i:{e609740b-b088-493a-b102-da317ec5bee0}:packages
+++Projects
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:projects
+++Microsoft.AspNetCore.App.Analyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.14\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.13\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++xunit.analyzers
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
+++Microsoft.NETCore.App
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\source\repos\fullstack\worldcities\worldcities.tests\microsoft.netcore.app
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\microsoft.netcore.app
+++coverlet.collector (3.1.0)
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>119697
+++Microsoft.EntityFrameworkCore.InMemory (5.0.14)
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>119694
+++Microsoft.NET.Test.Sdk (16.11.0)
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>119692
+++Moq (4.16.1)
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>119696
+++xunit (2.4.1)
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>119693
+++xunit.runner.visualstudio (2.4.3)
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:>119695
+++WorldCities
+i:{a317d0b4-c331-4906-a881-cb400c875ae4}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\worldcities.csproj
+i:{00000000-0000-0000-0000-000000000000}:WorldCities
+++Connected Services 
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119684
+++Properties
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\properties\
+++wwwroot
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\wwwroot\
+++ClientApp
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\
+++e2e
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\e2e\
+++src
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\e2e\src\
+++app
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\
+++cities
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\
+++cities.component.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\cities.component.css
+++cities.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\cities.component.html
+++cities.component.spec.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\cities.component.spec.ts
+++cities.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\cities.component.ts
+++city.service.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\city.service.ts
+++city.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\city.ts
+++city-edit.component.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\city-edit.component.css
+++city-edit.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\city-edit.component.html
+++city-edit.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\cities\city-edit.component.ts
+++countries
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\
+++countries.component.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\countries.component.css
+++countries.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\countries.component.html
+++countries.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\countries.component.ts
+++country.service.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\country.service.ts
+++country.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\country.ts
+++country-edit.component.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\country-edit.component.css
+++country-edit.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\country-edit.component.html
+++country-edit.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\countries\country-edit.component.ts
+++home
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\home\
+++home.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\home\home.component.html
+++home.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\home\home.component.ts
+++HomeComponent.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\home\homecomponent.css
+++nav-menu
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\nav-menu\
+++nav-menu.component.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\nav-menu\nav-menu.component.css
+++nav-menu.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\nav-menu\nav-menu.component.html
+++nav-menu.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\nav-menu\nav-menu.component.ts
+++angular-material.module.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\angular-material.module.ts
+++app.component.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\app.component.css
+++app.component.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\app.component.html
+++app.component.spec.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\app.component.spec.ts
+++app.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\app.component.ts
+++app.module.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\app.module.ts
+++app-routing.module.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\app-routing.module.ts
+++base.form.component.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\base.form.component.ts
+++base.service.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\app\base.service.ts
+++assets
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\assets\
+++environments
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\environments\
+++favicon.ico
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\favicon.ico
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\wwwroot\favicon.ico
+++index.html
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\index.html
+++main.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\main.ts
+++polyfills.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\polyfills.ts
+++styles.css
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\styles.css
+++test.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\test.ts
+++.browserslistrc
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\.browserslistrc
+++.editorconfig
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\.editorconfig
+++.gitignore
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\.gitignore
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\.gitignore
+++angular.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\angular.json
+++karma.conf.js
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\karma.conf.js
+++package.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\package.json
+++README.md
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\readme.md
+++tsconfig.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\tsconfig.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\e2e\tsconfig.json
+++tslint.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\tslint.json
+++Controllers
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\controllers\
+++Data
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\
+++Migrations
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\migrations\
+++Pages
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\pages\
+++appsettings.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\appsettings.json
+++Program.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\program.cs
+++Startup.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\startup.cs
+++WeatherForecast.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\weatherforecast.cs
+++No service dependencies discovered
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119685
+++launchSettings.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\properties\launchsettings.json
+++protractor.conf.js
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\e2e\protractor.conf.js
+++.gitkeep
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\assets\.gitkeep
+++environment.prod.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\environments\environment.prod.ts
+++environment.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\src\environments\environment.ts
+++package-lock.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\package-lock.json
+++tsconfig.app.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\tsconfig.app.json
+++tsconfig.spec.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\tsconfig.spec.json
+++CityController.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\controllers\citycontroller.cs
+++CountriesController.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\controllers\countriescontroller.cs
+++SeedController.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\controllers\seedcontroller.cs
+++WeatherForecastController.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\controllers\weatherforecastcontroller.cs
+++Models
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\models\
+++Source
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\source\
+++ApiResult.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\apiresult.cs
+++ApplicationDbContext.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\applicationdbcontext.cs
+++CityDTO.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\citydto.cs
+++CountryDTO.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\countrydto.cs
+++IQueryableExtensions.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\iqueryableextensions.cs
+++20220206150040_Initial.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\migrations\20220206150040_initial.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\migrations\applicationdbcontextmodelsnapshot.cs
+++_ViewImports.cshtml
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\pages\_viewimports.cshtml
+++Error.cshtml
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\pages\error.cshtml
+++appsettings.Development.json
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\microsoft.aspnetcore.app
+++EPPlus (5.8.6)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119716
+++Microsoft.AspNetCore.SpaServices.Extensions (5.0.12)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119719
+++Microsoft.EntityFrameworkCore (5.0.13)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119713
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.13)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119714
+++Microsoft.EntityFrameworkCore.Tools (5.0.13)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119720
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (5.0.2)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119722
+++Serilog.AspNetCore (5.0.0)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119715
+++Serilog.Settings.Configuration (3.3.0)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119721
+++Serilog.Sinks.MSSqlServer (5.7.0)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119717
+++System.Linq.Dynamic.Core (1.2.15)
+i:{e609740b-b088-493a-b102-da317ec5bee0}:>119718
+++app.e2e-spec.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\e2e\src\app.e2e-spec.ts
+++app.po.ts
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\clientapp\e2e\src\app.po.ts
+++City.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\models\city.cs
+++Country.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\models\country.cs
+++worldcities.xlsx
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\data\source\worldcities.xlsx
+++20220206150040_Initial.Designer.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\migrations\20220206150040_initial.designer.cs
+++Error.cshtml.cs
+i:{e609740b-b088-493a-b102-da317ec5bee0}:c:\users\admin\source\repos\fullstack\worldcities\worldcities\pages\error.cshtml.cs

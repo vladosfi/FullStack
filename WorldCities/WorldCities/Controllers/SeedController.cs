@@ -7,6 +7,7 @@ using OfficeOpenXml;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using WorldCities.Data.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace WorldCities.Controllers
 {
@@ -15,11 +16,19 @@ namespace WorldCities.Controllers
     public class SeedController : ControllerBase
     {
         private readonly ApplicationDbContext context;
+        private readonly RoleManager<IdentityRole> roleManager;
+        private readonly UserManager<ApplicationUser> userManager;
         private readonly IWebHostEnvironment env;
 
-        public SeedController(ApplicationDbContext context, IWebHostEnvironment env)
+        public SeedController(
+            ApplicationDbContext context,
+            RoleManager<IdentityRole> roleManager,
+            UserManager<ApplicationUser> userManager,
+            IWebHostEnvironment env)
         {
             this.context = context;
+            this.roleManager = roleManager;
+            this.userManager = userManager;
             this.env = env;
         }
 
@@ -100,6 +109,12 @@ namespace WorldCities.Controllers
                     });
                 }
             }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> CreateDefaultUsers()
+        {
+            throw new NotImplementedException();
         }
     }
 }
