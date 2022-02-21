@@ -1,11 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using System.IO;
 using Serilog;
 using Serilog.Sinks.MSSqlServer;
@@ -22,10 +18,6 @@ namespace WorldCities
     {
         public static void Main(string[] args)
         {
-            // SendGrid implementation test
-            Execute().Wait();
-
-
             var configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json",
@@ -59,20 +51,5 @@ namespace WorldCities
                 {
                     webBuilder.UseStartup<Startup>();
                 });
-
-
-        static async Task Execute()
-        {
-            var apiKey = Environment.GetEnvironmentVariable("WorldCities");
-            var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("sfi@abv.bg", "Example User");
-            var subject = "Sending with SendGrid is Fun";
-            var to = new EmailAddress("sfi@abv.bg", "Example User");
-            var plainTextContent = "and easy to do anywhere, even with C#";
-            var htmlContent = "<strong>and easy to do anywhere, even with C#</strong>";
-            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
-            var response = await client.SendEmailAsync(msg);
-        }
-
     }
 }

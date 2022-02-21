@@ -3,14 +3,17 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using System;
 using WorldCities.Data;
 using WorldCities.Data.Models;
+using WorldCities.Services;
 
 namespace WorldCities
 {
@@ -55,6 +58,17 @@ namespace WorldCities
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
+            });
+
+
+            // IEmailSender implementation using SendGrid
+            var apiKey = Environment.GetEnvironmentVariable("WorldCities");
+            services.AddTransient<IEmailSender, SendGridEmailSender>();
+            services.Configure<SendGridEmailSenderOptions>(options =>
+            {
+                options.ApiKey = apiKey;
+                options.Sender_Email = Configuration["ExternalProviders:SendGrid:Sender_Email"];
+                options.Sender_Name = Configuration["ExternalProviders:SendGrid:Sender_Name"];
             });
         }
 
