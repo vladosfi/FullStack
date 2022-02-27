@@ -20,7 +20,6 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,12 +39,16 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     AngularMaterialModule,
     ReactiveFormsModule,
+    ServiceWorkerModule.register(
+      'ngsw-worker.js', {
+      enabled: environment.production
+    }),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    }),
+    })
   ],
   providers: [
     {
