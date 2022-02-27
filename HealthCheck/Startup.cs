@@ -55,10 +55,19 @@ namespace HealthCheck
             {
                 OnPrepareResponse = (context) =>
                 {
-                    // Retrieve cache configuration from appsettings.json
-                    context.Context.Response.Headers["Cache-Control"] = Configuration["StaticFiles:Headers:Cache-Control"];
-                    context.Context.Response.Headers["Pragma"] = Configuration["StaticFiles:Headers:Pragma"];
-                    context.Context.Response.Headers["Expires"] = Configuration["StaticFiles:Headers:Expires"];
+                    switch (context.File.Name)
+                    {
+                        // disable caching for these specific files
+                        case "isOnline.txt":
+                            context.Context.Response.Headers.Add("Cache-Control", "no-cache, no-store");
+                            context.Context.Response.Headers.Add("Expires", "-1");
+                            break;
+                        // use default rules (from appsettings.json) for all other files
+                        default:
+                            context.Context.Response.Headers["Cache-Control"] =
+                                Configuration["StaticFiles:Headers:Cache-Control"];
+                            break;
+                    }
                 }
             });
 

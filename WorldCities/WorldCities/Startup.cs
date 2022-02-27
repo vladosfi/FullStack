@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -90,11 +91,36 @@ namespace WorldCities
             //app.UseCors(x => x.WithOrigins("http://localhost:4200" ,"https://localhost:4200").AllowAnyMethod().AllowAnyHeader());
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            if (!env.IsDevelopment())
+
+            // add .webmanifest MIME-type support
+            FileExtensionContentTypeProvider provider = new FileExtensionContentTypeProvider();
+            provider.Mappings[".webmanifest"] = "application/manifest+json";
+
+            app.UseStaticFiles(new StaticFileOptions()
             {
+                ContentTypeProvider = provider,
+                OnPrepareResponse = (context) =>
+                {
+                    if (context.File.Name == "isOnline.txt")
+                    {
+                        // disable caching for these files
+                        context.Context.Response.Headers.Add("Cache-Control",
+                        "no-cache, no-store");
+                        context.Context.Response.Headers.Add("Expires", "-1");
+                    }
+                    else
+                    {
+                        // Retrieve cache configuration from appsettings.json
+                        context.Context.Response.Headers["Cache-Control"] =
+                        Configuration["StaticFiles:Headers:Cache-Control"];
+                    }
+                }
+            });
+
+            //if (!env.IsDevelopment())
+            //{
                 app.UseSpaStaticFiles();
-            }
+            //}
 
             app.UseRouting();
 
@@ -122,7 +148,7 @@ namespace WorldCities
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                    //spa.UseAngularCliServer(npmScript: "start");
                 }
             });
 

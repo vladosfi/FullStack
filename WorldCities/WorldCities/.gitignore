@@ -19,10 +19,9 @@ x64/
 x86/
 build/
 bld/
-bin/
-Bin/
-obj/
-Obj/
+[Bb]in/
+[Oo]bj/
+[Dd]ist/
 
 # Visual Studio 2015 cache/options directory
 .vs/
